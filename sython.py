@@ -825,7 +825,7 @@ async def OwnerStart(event):
 
     await msg[0].forward_to(ownerhson_id)
     
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/pt2 (.*)')
+@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/pt2 (.*)'))
 async def OwnerStart(event):
     pt = event.pattern_match.group(1) 
     sender = await event.get_sender()
